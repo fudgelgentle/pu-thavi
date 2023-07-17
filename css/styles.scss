@@ -1,0 +1,8 @@
+// styles.scss contains the universal css design system for this project
+// every .html files will use this
+
+$primary-color: red;
+
+h1 {
+  color: $primary-color;
+}
