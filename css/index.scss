@@ -255,4 +255,21 @@ h1, h2, h3, h4, h5, p {
       display: none;
     }
   }
+
+  #ourdate-description {
+    background: $ourdate-hovered;
+  }
+  #mindfulmates-description {
+    background: $mindfulmates-hovered;
+  }
+  #mercular-description {
+    background: $mercular-hovered;
+  }
+  #beatbuddy-description {
+    background: $beatbuddy-hovered;
+    color: white;
+  }
+  #markthai-description {
+    background: $markthai-hovered;
+  }
 }
