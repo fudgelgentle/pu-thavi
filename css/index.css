@@ -1,0 +1,192 @@
+body {
+  background-image: url("../img/background3.svg");
+  background-attachment: fixed;
+  background-position: -100px -50px;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(2.5px);
+  padding-bottom: 20%;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5, p {
+  font-size: 28px;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.intro-container {
+  padding-top: 15em;
+}
+.intro-container .intro {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2.5vmin;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.intro-container .intro-desc {
+  margin-top: 2em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+
+.case-studies {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 5vw;
+}
+.case-studies .case-studies-title {
+  text-align: center;
+  font-size: 48px;
+}
+.case-studies .card-container {
+  perspective: 500px;
+  transition: ease 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 15px;
+  overflow: hidden;
+}
+.case-studies .card-container .ux-tag, .case-studies .card-container .product-tag, .case-studies .card-container .coding-tag {
+  position: absolute;
+  top: 2%;
+  left: 1.5%;
+  border-radius: 10px;
+  padding: 0.3em 1em 0.3em 1em;
+  color: white;
+}
+.case-studies .card-container .ux-tag {
+  background-color: #3A86FF;
+}
+.case-studies .card-container .product-tag {
+  background-color: #8338EC;
+}
+.case-studies .card-container .coding-tag {
+  background-color: #F77F00;
+}
+.case-studies .card-container .image-poster {
+  filter: brightness(95%);
+  transition: ease 0.5s;
+}
+.case-studies .card-container .description-container {
+  backdrop-filter: blur(20px);
+  padding: 20px 40px 20px 40px;
+}
+.case-studies .card-container #ourdate-description {
+  background: rgba(230, 244, 246, 0.95);
+}
+.case-studies .card-container #mindfulmates-description {
+  background: rgba(255, 255, 255, 0.95);
+}
+.case-studies .card-container #mercular-description {
+  background: rgba(242, 251, 255, 0.95);
+}
+.case-studies .card-container #beatbuddy-description {
+  background: rgba(75, 75, 75, 0.9);
+  color: white;
+}
+.case-studies .card-container #markthai-description {
+  background: rgba(242, 227, 170, 0.95);
+}
+
+.card-container:hover {
+  cursor: pointer;
+  width: 68%;
+  height: 68%;
+  transform: rotateX(10deg);
+  transform: rotateY(1deg);
+}
+.card-container:hover .image-poster {
+  filter: brightness(100%);
+}
+.card-container:hover .description-container {
+  backdrop-filter: blur(100px);
+  transition: ease 0.5s;
+}
+.card-container:hover #ourdate-description {
+  background: #B8E0E5;
+}
+.card-container:hover #mindfulmates-description {
+  background: #9DD4F2;
+}
+.card-container:hover #mercular-description {
+  background: #BBE1F2;
+}
+.card-container:hover #beatbuddy-description {
+  background: #333333;
+}
+.card-container:hover #markthai-description {
+  background: #E5C445;
+}
+
+/* ? Breakpoint for large screen */
+/* ? Breakpoint for smaller desktop */
+/* ? Breakpoint for mobile */
+@media screen and (max-width: 600px) {
+  .intro-container .intro {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 40px 10px 40px 10px;
+  }
+  .case-studies .card-container {
+    width: 80%;
+  }
+  .case-studies .case-studies-title {
+    font-size: 36px;
+  }
+  .case-studies .card-container .description-container {
+    padding: 15px 25px 15px 25px;
+  }
+  .card-container .ux-tag, .card-container .product-tag, .card-container .coding-tag {
+    display: none;
+  }
+}
+/* ? Breakpoint for smaller mobile */
+
+/*# sourceMappingURL=index.css.map */
