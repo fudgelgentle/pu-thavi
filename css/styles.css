@@ -5,22 +5,5 @@ body {
 /* ? Breakpoint for large screen */
 /* ? Breakpoint for smaller desktop */
 /* ? Breakpoint for mobile */
-@media screen and (max-width: 600px) {
-  body h1 {
-    font-size: 36px;
-  }
-  body h2 {
-    font-size: 28px;
-  }
-  body h3 {
-    font-size: 24px;
-  }
-  body h4 {
-    font-size: 22px;
-  }
-  body h5, body p {
-    font-size: 20px;
-  }
-}
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   backdrop-filter: blur(2.5px);
   padding-bottom: 20%;
+  min-height: 100vh;
 }
 
 h1 {
@@ -169,6 +170,21 @@ h1, h2, h3, h4, h5, p {
 /* ? Breakpoint for smaller desktop */
 /* ? Breakpoint for mobile */
 @media screen and (max-width: 600px) {
+  body h1 {
+    font-size: 36px;
+  }
+  body h2 {
+    font-size: 28px;
+  }
+  body h3 {
+    font-size: 24px;
+  }
+  body h4 {
+    font-size: 22px;
+  }
+  body h5, body p {
+    font-size: 20px;
+  }
   .intro-container .intro {
     margin-left: 20px;
     margin-right: 20px;
@@ -187,6 +203,5 @@ h1, h2, h3, h4, h5, p {
     display: none;
   }
 }
-/* ? Breakpoint for smaller mobile */
 
 /*# sourceMappingURL=index.css.map */
