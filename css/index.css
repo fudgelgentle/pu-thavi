@@ -201,8 +201,31 @@ h1, h2, h3, h4, h5, p {
   .case-studies .card-container .description-container {
     padding: 15px 25px 15px 25px;
   }
-  .card-container .ux-tag, .card-container .product-tag, .card-container .coding-tag {
+  .case-studies .card-container .ux-tag, .case-studies .card-container .product-tag, .case-studies .card-container .coding-tag {
     display: none;
+  }
+  .case-studies .card-container .image-poster {
+    filter: brightness(100%);
+  }
+  .case-studies .card-container #ourdate-description {
+    background: #B8E0E5;
+  }
+  .case-studies .card-container #mindfulmates-description {
+    background: #9DD4F2;
+  }
+  .case-studies .card-container #mercular-description {
+    background: #BBE1F2;
+  }
+  .case-studies .card-container #beatbuddy-description {
+    background: #333333;
+    color: white;
+  }
+  .case-studies .card-container #markthai-description {
+    background: #E5C445;
+  }
+  .card-container:hover, .card-container:active {
+    width: 68%;
+    height: 68%;
   }
 }
 
