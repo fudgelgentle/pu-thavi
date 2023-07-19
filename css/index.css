@@ -223,9 +223,9 @@ h1, h2, h3, h4, h5, p {
   .case-studies .card-container #markthai-description {
     background: #E5C445;
   }
-  .card-container:hover, .card-container:active {
-    width: 68%;
-    height: 68%;
+  body .card-container:hover, body .card-container:active {
+    width: 76%;
+    height: 76%;
   }
 }
 
