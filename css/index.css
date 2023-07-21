@@ -140,8 +140,7 @@ h1, h2, h3, h4, h5, p, a {
 
 .card-container:hover {
   cursor: pointer;
-  width: 68%;
-  height: 68%;
+  transform: scale(0.95);
 }
 .card-container:hover .image-poster {
   filter: brightness(100%);
