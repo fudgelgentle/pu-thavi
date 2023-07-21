@@ -19,7 +19,7 @@
     let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     // Add the 'safari-background' class to the container if it's Safari
     if (isSafari) {
-      // document.documentElement.style.setProperty("--navbar-background-color", safariColor);
+      document.documentElement.style.setProperty("--navbar-background-color", safariColor);
     }
   }
 
