@@ -17,8 +17,9 @@
     let safariColor = "white";
     // Check if the browser is Safari
     let isSafari = window.safari !== undefined;
+    let isIphone = /(iPhone)/i.test(navigator.userAgent);
     // Add the 'safari-background' class to the container if it's Safari
-    if (isSafari) {
+    if (isSafari && isIphone) {
       document.documentElement.style.setProperty("--navbar-background-color", safariColor);
     }
   }
