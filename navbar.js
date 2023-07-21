@@ -6,7 +6,7 @@
 
   function init() {
     id('hamburger-mobile').addEventListener('click', toggleHamburger);
-    detectSafari();
+    // detectSafari();
   }
 
   /**
