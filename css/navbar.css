@@ -39,8 +39,11 @@
   color: inherit;
   text-decoration: none;
 }
-#nav-menu .hamburger-icon, #nav-menu #logo-img-mobile, #nav-menu #hamburger-mobile {
+#nav-menu #logo-img-mobile, #nav-menu #hamburger-mobile {
   height: 1em;
+}
+#nav-menu #hamburger-mobile {
+  cursor: pointer;
 }
 #nav-menu .menu li, #nav-menu .navbar-mobile li {
   list-style: none;

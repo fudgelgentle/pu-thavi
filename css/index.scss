@@ -268,7 +268,6 @@ h1, h2, h3, h4, h5, p, a {
   }
 
   body .card-container:hover, body .card-container:active {
-    width: 76%;
-    height: 76%;
+    transform: scale(0.95);
   }
 }

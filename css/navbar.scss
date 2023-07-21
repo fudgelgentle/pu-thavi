@@ -50,8 +50,12 @@ $mobile-background-color: rgba(252, 223, 164, 0.40);
     text-decoration: none;
   }
 
-  .hamburger-icon, #logo-img-mobile, #hamburger-mobile {
+  #logo-img-mobile, #hamburger-mobile {
     height: 1em;
+  }
+
+  #hamburger-mobile {
+    cursor: pointer;
   }
 
   .menu li, .navbar-mobile li {
