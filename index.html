@@ -9,7 +9,7 @@
 
     <script src="index.js"></script>
     <!-- ? include this part to add navbar for every page -->
-    <script src="navbar.js"></script>
+    <!-- <script src="navbar.js"></script> -->
     <link rel="stylesheet" href="css/navbar.css">
 
     <link rel="stylesheet" href="css/styles.css">
@@ -93,29 +93,21 @@
     </footer>
 
   </body>
-
   <!-- ? include this part to add navbar for every page -->
   <script>
 
-    if (document.readyState === 'loading') {
-      console.log('NAVBAR LOADED');
-      // Use JavaScript to load the navbar into the container div
-      document.addEventListener('DOMContentLoaded', loadNavBar)
-    } else {
-      console.log('NAVBAR LOADED');
-      loadNavBar();
-    }
-
-    function loadNavBar() {
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('nav-placeholder').innerHTML = data;
-      })
-      .catch(error => {
-        console.log(error);
-      });
-    }
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+        // After loading the navbar content, load the navbar.js file separately
+        const scriptElement = document.createElement('script');
+        scriptElement.src = 'navbar.js'; // Update the path to navbar.js
+        document.body.appendChild(scriptElement);
+    })
+    .catch(error => {
+      console.log(error);
+    });
 
   </script>
 </html>
