@@ -3,39 +3,9 @@
 (function() {
 
   window.addEventListener('load', init);
-  let prevScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  let lastScrollTop = 0;
 
   function init() {
     window.addEventListener('scroll', handleScrollBehavior);
-    // window.addEventListener('scroll', scrollTop);
-    console.log('max scroll height = ' + getMaxScrollableHeight());
-  }
-
-  function scrollTop() {
-    let targetElement = qs('.intro-container');
-    let initialOffset = targetElement.offsetTop + targetElement.offsetHeight;
-
-    let currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    if (window.scrollY > initialOffset) {
-      // delta - The percentage value of how larger scrollY value is compared to initialOffset
-      let delta = (window.scrollY - initialOffset) * 1.0 / initialOffset;
-      let backdropFilter = getBackdropFilter();
-      let backdropFilterValue = parseInt(backdropFilter.match(/\d+/)[0]);
-      let incrementBlurValue;
-
-      if (currentScrollPosition > lastScrollTop) {
-        // incrementBlurValue = backdropFilterValue + (delta * 2);
-        incrementBlurValue = backdropFilterValue + 2;
-        console.log('scroll down');
-      } else if (currentScrollPosition < lastScrollTop) {
-        // incrementBlurValue = backdropFilterValue - (delta * 2);
-        incrementBlurValue = backdropFilterValue - 2;
-        console.log('scroll up');
-      }
-      qs('.overlay').style.backdropFilter = `blur(${incrementBlurValue}px)`;
-    }
-    lastScrollTop = currentScrollPosition <= 0 ? 0 : currentScrollPosition; // For Mobile or negative scrolling
   }
 
   function handleScrollBehavior() {
@@ -64,11 +34,6 @@
     let scrollPercent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
     console.log('scrollPercent = ' + scrollPercent)
     return scrollPercent;
-  }
-
-  // Function to get the current backdrop-filter blur value
-  function getBackdropFilter() {
-    return window.getComputedStyle(qs('.overlay')).getPropertyValue('backdrop-filter');
   }
 
   function getMaxScrollableHeight() {
