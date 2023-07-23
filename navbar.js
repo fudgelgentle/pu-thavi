@@ -5,6 +5,7 @@
   window.addEventListener('load', init);
 
   function init() {
+
     id('hamburger-mobile').addEventListener('click', toggleHamburger);
     // detectSafari();
   }
@@ -27,7 +28,6 @@
   function toggleHamburger() {
     console.log('toggleHamburger called');
     let style2 = window.getComputedStyle(qs('.navbar-mobile'));
-    let navMenu = qs('.navbar-mobile ul');
 
     if (style2.display === 'none') {
       qs('.navbar-mobile').style.display = 'block';

@@ -6,10 +6,14 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="index.js"></script>
+    <!-- ? include this part to add navbar for every page -->
+    <script src="navbar.js"></script>
+    <link rel="stylesheet" href="css/navbar.css">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <script src="navbar.js"></script>
     <link rel="stylesheet" href="css/background_shape.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,40 +22,7 @@
   <body>
     <div class="overlay"></div>
 
-    <header id="nav-menu">
-      <nav class="navbar">
-        <a id="logo" href="/">
-          <span id="logo-text">Pu Thavikulwat</span>
-          <!-- <img id="logo-img" src="img/pu_logo.png"> -->
-        </a>
-
-        <ul class="nav-links">
-          <div class="menu">
-            <li><a href="/">Case Studies</a></li>
-            <li><a href="/">Coding</a></li>
-            <li><a href="/">About Me</a></li>
-          </div>
-        </ul>
-      </nav>
-
-      <div class="navbar-mobile-container">
-        <nav class="navbar-top-mobile">
-          <a href="/">
-            <img id="logo-img-mobile" src="img/pu_logo.png" alt="Pu Thavi Logo">
-          </a>
-          <img id="hamburger-mobile" src="img/hamburger_menu.svg" alt="Hamburger Menu">
-        </nav>
-
-        <nav class="navbar-mobile">
-          <ul>
-            <li><a href="/">Case Studies</a></li>
-            <li><a href="/">Coding</a></li>
-            <li><a href="/">About Me</a></li>
-          </ul>
-        </nav>
-      </div>
-
-    </header>
+    <div id="nav-placeholder"></div>
 
     <section class="intro-container">
       <div class="intro">
@@ -65,6 +36,7 @@
 
     <section class="case-studies">
       <h2 class="case-studies-title bold">Case Studies</h2>
+
       <div class="card-container">
         <img src="img/ourdate_poster.png" alt="Ourdate Case Study" class="image-poster">
         <h4 class="ux-tag">UX Design</h4>
@@ -83,6 +55,7 @@
         </div>
       </div>
 
+
       <div class="card-container">
         <img src="img/mercular_poster.png" alt="Mercular Case Study" class="image-poster">
         <h4 class="ux-tag">UX Design</h4>
@@ -91,7 +64,6 @@
           <p>A feature that provides meaningful and engaging way for users to save their product • 2022</p>
         </div>
       </div>
-
     </section>
 
     <section class="case-studies">
@@ -113,9 +85,26 @@
           <p>An e-commerce site for a Thai restaurant in Seattle, WA • 2022</p>
         </div>
       </div>
-
     </section>
 
+    <footer>
+      <h4>Designed and Coded by Pu Thavikulwat</h4>
+    </footer>
 
   </body>
+
+  <!-- ? include this part to add navbar for every page -->
+  <script>
+    // Use JavaScript to load the navbar into the container div
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('nav-placeholder').innerHTML = data;
+      })
+      .catch(error => {
+        console.log(error);
+      });
+    });
+  </script>
 </html>

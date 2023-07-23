@@ -3,8 +3,14 @@ body {
   background-attachment: fixed;
   background-position: -100px -50px;
   background-repeat: no-repeat;
-  padding-bottom: 20%;
+  padding-bottom: 10%;
   min-height: 100vh;
+}
+
+footer h4 {
+  position: sticky;
+  text-align: center;
+  margin-top: 7%;
 }
 
 h1 {
@@ -67,6 +73,7 @@ h1, h2, h3, h4, h5, p, a {
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(2.5px);
+  transition: 0.3s;
   z-index: -1;
 }
 
@@ -113,7 +120,6 @@ h1, h2, h3, h4, h5, p, a {
 }
 .case-studies .card-container .image-poster {
   border-radius: 15px 15px 0px 0px;
-  filter: brightness(95%);
   transition: ease 0.5s;
 }
 .case-studies .card-container .description-container {
@@ -141,9 +147,6 @@ h1, h2, h3, h4, h5, p, a {
 .card-container:hover {
   cursor: pointer;
   transform: scale(0.95);
-}
-.card-container:hover .image-poster {
-  filter: brightness(100%);
 }
 .card-container:hover .description-container {
   backdrop-filter: blur(100px);
@@ -198,9 +201,6 @@ h1, h2, h3, h4, h5, p, a {
   }
   .case-studies .card-container .ux-tag, .case-studies .card-container .product-tag, .case-studies .card-container .coding-tag {
     display: none;
-  }
-  .case-studies .card-container .image-poster {
-    filter: brightness(100%);
   }
   .case-studies .card-container #ourdate-description {
     background: #B8E0E5;
