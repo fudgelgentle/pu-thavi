@@ -95,17 +95,26 @@
 
   <!-- ? include this part to add navbar for every page -->
   <script>
-    // Use JavaScript to load the navbar into the container div
-    document.addEventListener('DOMContentLoaded', function() {
 
-    });
-    fetch('navbar.html')
+    if (document.readyState === 'loading') {
+      console.log('NAVBAR LOADED');
+      // Use JavaScript to load the navbar into the container div
+      document.addEventListener('DOMContentLoaded', loadNavBar)
+    } else {
+      console.log('NAVBAR LOADED');
+      loadNavBar();
+    }
+
+    function loadNavBar() {
+      fetch('navbar.html')
         .then(response => response.text())
         .then(data => {
           document.getElementById('nav-placeholder').innerHTML = data;
       })
       .catch(error => {
         console.log(error);
-    });
+      });
+    }
+
   </script>
 </html>
