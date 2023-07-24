@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="index.js"></script>
-    <!-- ? include this part to add navbar for every page -->
-    <!-- <script src="navbar.js"></script> -->
+
+    <!-- ? Put this in every page to populate navbar -->
+    <script src="navbar.js"></script>
     <link rel="stylesheet" href="css/navbar.css">
 
     <link rel="stylesheet" href="css/styles.css">
@@ -23,6 +24,7 @@
 
     <div class="overlay"></div>
 
+    <!-- ? Put this in every page to populate navbar -->
     <div id="nav-placeholder"></div>
 
     <section class="intro-container">
@@ -96,18 +98,18 @@
   <!-- ? include this part to add navbar for every page -->
   <script>
 
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('nav-placeholder').innerHTML = data;
-        // After loading the navbar content, load the navbar.js file separately
-        const scriptElement = document.createElement('script');
-        scriptElement.src = 'navbar.js'; // Update the path to navbar.js
-        document.body.appendChild(scriptElement);
-    })
-    .catch(error => {
-      console.log(error);
-    });
+    // fetch('navbar.html')
+    //   .then(response => response.text())
+    //   .then(data => {
+    //     document.getElementById('nav-placeholder').innerHTML = data;
+    //     // After loading the navbar content, load the navbar.js file separately
+    //     const scriptElement = document.createElement('script');
+    //     scriptElement.src = 'navbar.js'; // Update the path to navbar.js
+    //     document.body.appendChild(scriptElement);
+    // })
+    // .catch(error => {
+    //   console.log(error);
+    // });
 
   </script>
 </html>

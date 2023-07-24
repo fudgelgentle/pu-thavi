@@ -5,8 +5,49 @@
   window.addEventListener('load', init);
 
   function init() {
-
+    // setTimeout(populateNavBar, 100);
+    populateNavBar();
     id('hamburger-mobile').addEventListener('click', toggleHamburger);
+  }
+
+  function populateNavBar() {
+    let navbarContent = `
+      <header id="nav-menu">
+        <nav class="navbar">
+          <a id="logo" href="/">
+            <span id="logo-text">Pu Thavikulwat</span>
+            <!-- <img id="logo-img" src="img/pu_logo.png"> -->
+          </a>
+
+          <ul class="nav-links">
+            <div class="menu">
+              <li><a href="/">Case Studies</a></li>
+              <li><a href="/">Coding</a></li>
+              <li><a href="/">About Me</a></li>
+            </div>
+          </ul>
+        </nav>
+
+        <div class="navbar-mobile-container">
+          <nav class="navbar-top-mobile">
+            <a href="/">
+              <img id="logo-img-mobile" src="img/pu_logo.png" alt="Pu Thavi Logo">
+            </a>
+            <img id="hamburger-mobile" src="img/hamburger_menu.svg" alt="Hamburger Menu">
+          </nav>
+
+          <nav class="navbar-mobile">
+            <ul>
+              <li><a href="/">Case Studies</a></li>
+              <li><a href="/">Coding</a></li>
+              <li><a href="/">About Me</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    `;
+
+    id('nav-placeholder').insertAdjacentHTML('afterbegin', navbarContent);
   }
 
   /**
@@ -14,13 +55,13 @@
    * and work won't with backdrop-filter
    */
   function detectSafari() {
-    let safariColor = "white";
+    let safariColor = 'white';
     // Check if the browser is Safari
     let isSafari = window.safari !== undefined;
     let isIphone = /(iPhone)/i.test(navigator.userAgent);
     // Add the 'safari-background' class to the container if it's Safari
     if (isSafari && isIphone) {
-      document.documentElement.style.setProperty("--navbar-background-color", safariColor);
+      document.documentElement.style.setProperty('--navbar-background-color', safariColor);
     }
   }
 
