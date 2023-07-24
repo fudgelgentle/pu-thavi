@@ -1,5 +1,7 @@
 :root {
   --navbar-background-color: rgba(255, 255, 255, 0.01);
+  --navbar-text-color: #19261D;
+  --navbar-text-hover-color: #548C66;
 }
 
 #nav-menu {
@@ -7,7 +9,7 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  color: #19261D;
+  color: var(--navbar-text-color);
   font-size: 36px;
   position: fixed;
   z-index: 10;
@@ -49,7 +51,7 @@
   list-style: none;
 }
 #nav-menu .menu li:hover, #nav-menu .navbar-mobile li:hover {
-  color: #3A5944;
+  color: var(--navbar-text-hover-color);
   transition: ease 0.5s;
 }
 

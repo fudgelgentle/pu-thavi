@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Pu Thavikulwat | UX</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="index.js"></script>
+    <script defer src="layout.js"></script>
 
     <!-- ? Put this in every page to populate navbar -->
     <script src="navbar.js"></script>
@@ -15,19 +16,20 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
+  <!-- This website is designed and coded by Pu Thavikulwat -->
   <body>
-    <!-- This website is designed and coded by Pu Thavikulwat -->
 
     <div class="overlay"></div>
 
-    <!-- ? Put this in every page to populate navbar -->
+    <!-- * Put this in every page to populate navbar -->
     <div id="nav-placeholder"></div>
 
-    <section class="intro-container">
+    <section class="intro-container hide-long">
       <div class="intro">
         <h1 class="bold">Pu Thavikulwat</h1>
         <h2 class="bold">Code-tailored Designer</h2>
@@ -38,9 +40,9 @@
     </section>
 
     <section class="case-studies">
-      <h2 class="case-studies-title bold">Case Studies</h2>
+      <h2 class="case-studies-title bold hide">Case Studies</h2>
 
-      <div class="card-container">
+      <div class="card-container hide">
         <img src="img/ourdate_poster.png" alt="Ourdate Case Study" class="image-poster">
         <h4 class="ux-tag">UX Design</h4>
         <div class="description-container" id="ourdate-description">
@@ -49,7 +51,7 @@
         </div>
       </div>
 
-      <div class="card-container">
+      <div class="card-container hide">
         <img src="img/mindfulmates_poster.png" alt="MindfulMates Case Study" class="image-poster">
         <h4 class="product-tag">Product Design</h4>
         <div class="description-container" id="mindfulmates-description">
@@ -59,7 +61,7 @@
       </div>
 
 
-      <div class="card-container">
+      <div class="card-container hide">
         <img src="img/mercular_poster.png" alt="Mercular Case Study" class="image-poster">
         <h4 class="ux-tag">UX Design</h4>
         <div class="description-container" id="mercular-description">
@@ -70,8 +72,8 @@
     </section>
 
     <section class="case-studies">
-      <h2 class="case-studies-title bold">Coding</h2>
-      <div class="card-container">
+      <h2 class="case-studies-title bold hide">Coding</h2>
+      <div class="card-container hide">
         <img src="img/beatbuddy_poster2.png" alt="BEatBuddy Showcase" class="image-poster">
         <h4 class="coding-tag">Coding</h4>
         <div class="description-container" id="beatbuddy-description">
@@ -80,7 +82,7 @@
         </div>
       </div>
 
-      <div class="card-container">
+      <div class="card-container hide">
         <img src="img/markthai_poster.png" alt="Mark Thai Food Box Showcase" class="image-poster">
         <h4 class="coding-tag">Coding</h4>
         <div class="description-container" id="markthai-description">
@@ -95,21 +97,4 @@
     </footer>
 
   </body>
-  <!-- ? include this part to add navbar for every page -->
-  <script>
-
-    // fetch('navbar.html')
-    //   .then(response => response.text())
-    //   .then(data => {
-    //     document.getElementById('nav-placeholder').innerHTML = data;
-    //     // After loading the navbar content, load the navbar.js file separately
-    //     const scriptElement = document.createElement('script');
-    //     scriptElement.src = 'navbar.js'; // Update the path to navbar.js
-    //     document.body.appendChild(scriptElement);
-    // })
-    // .catch(error => {
-    //   console.log(error);
-    // });
-
-  </script>
 </html>

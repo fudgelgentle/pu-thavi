@@ -11,18 +11,19 @@
   function handleScrollBehavior() {
     let blurValue = 0;
     if (getScrollPercent() < 5) {
+      blurValue = 1;
+    } else if (getScrollPercent() >= 5) {
       blurValue = 2.5;
-    } else if (getScrollPercent() >= 5 && getScrollPercent() < 10) {
-      blurValue = 5;
-    } else if (getScrollPercent() >= 10 && getScrollPercent() < 15) {
-      blurValue = 10;
-    } else if (getScrollPercent() >= 15 && getScrollPercent() < 30) {
-      blurValue = 15;
-    } else if (getScrollPercent() >= 30 && getScrollPercent() < 40) {
-      blurValue = 20;
-    } else {
-      blurValue = 30;
     }
+    // } else if (getScrollPercent() >= 10 && getScrollPercent() < 15) {
+    //   blurValue = 10;
+    // } else if (getScrollPercent() >= 15 && getScrollPercent() < 30) {
+    //   blurValue = 15;
+    // } else if (getScrollPercent() >= 30 && getScrollPercent() < 40) {
+    //   blurValue = 20;
+    // } else {
+    //   blurValue = 30;
+    // }
     qs('.overlay').style.backdropFilter = `blur(${blurValue}px)`;
   }
 
