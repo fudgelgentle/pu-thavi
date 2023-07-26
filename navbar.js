@@ -23,7 +23,7 @@
             <div class="menu">
               <li><a href="/">Case Studies</a></li>
               <li><a href="/">Coding</a></li>
-              <li><a href="/">About Me</a></li>
+              <li><a href="/about.html">About Me</a></li>
             </div>
           </ul>
         </nav>
@@ -40,7 +40,7 @@
             <ul>
               <li><a href="/">Case Studies</a></li>
               <li><a href="/">Coding</a></li>
-              <li><a href="/">About Me</a></li>
+              <li><a href="/about.html">About Me</a></li>
             </ul>
           </nav>
         </div>

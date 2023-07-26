@@ -13,7 +13,7 @@
     if (getScrollPercent() < 5) {
       blurValue = 1;
     } else if (getScrollPercent() >= 5) {
-      blurValue = 2.5;
+      blurValue = 4;
     }
     // } else if (getScrollPercent() >= 10 && getScrollPercent() < 15) {
     //   blurValue = 10;
