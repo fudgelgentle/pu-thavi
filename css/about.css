@@ -50,7 +50,7 @@
 
 .mobile-container {
   display: none;
-  padding: 1em;
+  padding: 2em 1em 2em 1em;
   position: relative;
   background-color: aliceblue;
   border-radius: 10px;
@@ -83,14 +83,12 @@
   margin: auto;
   padding: 0;
   z-index: 100;
-  transition: all 1s;
+  transition: transform 1s, opacity 1s, z-index 1s;
 }
 .mobile-container .carousel-wrapper .carousel-photo.initial, .mobile-container .carousel-wrapper .carousel-photo.active {
   opacity: 1;
   position: relative;
   z-index: 900;
-  transition: all 1s;
-  transform: translateZ(0);
 }
 .mobile-container .carousel-wrapper .carousel-photo.prev, .mobile-container .carousel-wrapper .carousel-photo.next {
   z-index: 800;
