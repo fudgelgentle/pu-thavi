@@ -65,14 +65,13 @@
     margin: auto;
     padding: 0;
     z-index: 100;
-    transition: all 1s;
+    transition: transform 1s, opacity 1s, z-index 1s;
   }
 
   .carousel-photo.initial, .carousel-photo.active {
     opacity: 1;
     position: relative;
     z-index: 900;
-    transition: all 1s;
   }
 
   .carousel-photo.prev, .carousel-photo.next {
