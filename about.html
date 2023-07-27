@@ -14,6 +14,8 @@
     <!-- * Put this in every page to populate navbar -->
 
     <script src="layout.js"></script>
+    <script async defer src="carousel.js"></script>
+
     <link rel="icon" type="image/png" href="img/favicon_pu.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -25,7 +27,6 @@
 
   </head>
   <body>
-    <script src="" async defer></script>
 
     <div class="overlay"></div>
 
@@ -46,6 +47,25 @@
         <h4>Outside of work, I enjoy traveling to different parts of the world 🛩️, playing video games 🎮, and watching anime.</h4>
       </div>
     </section>
+
+    <div class="mobile-container">
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <img src="img/me_1.png" id='1' class="carousel-photo initial" alt="A picture of myself">
+          <img src="img/me_2.png" id='2' class="carousel-photo" alt="A picture of myself">
+          <img src="img/me_3.png" id='3' class="carousel-photo" alt="A picture of myself">
+          <div class="carousel-button-next"></div>
+          <div class="carousel-button-prev"></div>
+          <div class="indicator-container">
+            <div class="indicator initial"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
 
   </body>
 
