@@ -194,7 +194,7 @@
 
     let nextPhoto;
     if (oldPhoto === 1) {
-      nextPhoto = 3;
+      nextPhoto = n;
     } else {
       nextPhoto = oldPhoto - 1;
     }

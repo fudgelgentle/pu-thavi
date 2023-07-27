@@ -79,9 +79,9 @@
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    position: static;
 
     .carousel {
+      overflow: hidden;
       transform-style: preserve-3d;
     }
 
@@ -100,6 +100,8 @@
       opacity: 1;
       position: relative;
       z-index: 900;
+      transition: all 1s;
+      transform: translateZ(0);
     }
 
     .carousel-photo.prev, .carousel-photo.next {
