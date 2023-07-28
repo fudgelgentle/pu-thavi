@@ -1,10 +1,36 @@
 // styles.scss contains the universal css design system for this project
 // every .html files will use this
 
-$primary-color: red;
-
 body {
   margin: 0 auto;
+}
+
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 36px;
+}
+h4 {
+  font-size: 32px;
+}
+h5, p {
+  font-size: 28px;
+}
+
+h1, h2, h3, h4, h5, p, a {
+  margin: 0;
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+.regular {
+  font-weight: 400;
 }
 
 /* ? Breakpoint for large screen */

@@ -1,0 +1,99 @@
+$h2-font: 'Alata', sans-serif;
+$h3-font: 'Darker Grotesque', sans-serif;
+
+.content-container {
+  padding: 5% 10% 5% 10%;
+
+  ul li:nth-child(n+2), ol li:nth-child(n+2) {
+    margin-top: 15px;
+  }
+  ol {
+    list-style-type: decimal; /* To use decimal numbers as list markers (1, 2, 3, ...) */
+  }
+  ul {
+    list-style-type: disc; /* To use disc bullets for unordered lists (default) */
+  }
+}
+
+.content-container-2 {
+  padding: 5% 10% 5% 10%;
+  background-color: #E6F4F6;;
+
+  #old-profile {
+    filter: drop-shadow(0px 8px 8px rgba(24, 39, 75, 0.08)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 5% auto 5% auto;
+    display: block;
+    width: 300px;
+  }
+}
+
+body h2 {
+  font-family: $h2-font;
+  font-size: 40px;
+  color: #363636;
+}
+
+body h3, .content-container ul, .content-container ol {
+  font-size: 28px;
+  color: #333333;
+}
+
+.feature-text {
+  font-size: 24px;
+}
+
+body h3, .content-container ul, .content-container ol, .feature-text {
+  font-family: $h3-font;
+}
+
+.header-img {
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.section {
+  margin-top: 10%;
+}
+
+.project-info {
+  // display: flex;
+  // justify-content: space-between;
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  justify-content: space-between;
+
+  .detail {
+    margin-top: 1%;
+  }
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+/* ? Breakpoint for mobile */
+@media screen and (max-width: 700px) {
+
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  body h2 {
+    font-size: 18px;
+  }
+
+  body h3, .content-container ul, .content-container ol {
+    font-size: 16px;
+  }
+
+  .feature-text {
+    font-size: 14px;
+  }
+
+
+  .content-container-2 #old-profile {
+    width: 150px;
+  }
+
+}

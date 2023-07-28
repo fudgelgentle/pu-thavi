@@ -14,11 +14,16 @@
   .hide {
     opacity: 0;
     transform: translateY(-10%);
+    transition: all 0.5s;
   }
   .hide-long {
     opacity: 0;
     transform: translateY(-10%);
     transition: all 1s;
+  }
+  .show {
+    opacity: 1;
+    transform: translateY(0%);
   }
   .img-stack:nth-child(0) {
     transition-delay: 100ms;
@@ -28,10 +33,6 @@
   }
   .img-stack:nth-child(2) {
     transition-delay: 300ms;
-  }
-  .show {
-    opacity: 1;
-    transform: translateY(0%);
   }
 }
 

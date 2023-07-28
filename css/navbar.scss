@@ -1,6 +1,8 @@
 $nav-text-color: #19261D;
 $nav-text-hovered: #3A5944;
 
+$nav-font: 'Darker Grotesque', sans-serif;
+
 $mobile-background-color: rgba(252, 223, 164, 0.40);
 
 :root {
@@ -13,15 +15,21 @@ $mobile-background-color: rgba(252, 223, 164, 0.40);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   color: $nav-text-color;
-  font-size: 36px;
+  font-size: 32px;
   position: fixed;
   z-index: 10;
   width: 100%;
+  font-family: $nav-font;
+  padding: 0.7em;
 
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .nav-links {
+      margin: 0;
+    }
   }
 
   .navbar-mobile ul {

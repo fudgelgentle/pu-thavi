@@ -88,6 +88,8 @@ h1, h2, h3, h4, h5, p, a {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   border-radius: 15px;
+  color: inherit;
+  text-decoration: none;
 }
 .case-studies .card-container .ux-tag, .case-studies .card-container .product-tag, .case-studies .card-container .coding-tag {
   position: absolute;
