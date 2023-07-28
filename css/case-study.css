@@ -11,6 +11,18 @@
   list-style-type: disc; /* To use disc bullets for unordered lists (default) */
 }
 
+footer h4 {
+  position: sticky;
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 32px;
+}
+
+body {
+  padding-bottom: 10%;
+}
+
 .content-container-v2 {
   padding: 5% 10% 5% 10%;
 }
@@ -31,7 +43,8 @@ body h2 {
   color: #363636;
 }
 
-body h3, .content-container ul, .content-container ol {
+body h3, .content-container ul, .content-container ol,
+.content-container-v2 ul, .content-container-v2 ol {
   font-size: 28px;
   color: #333333;
 }
@@ -40,7 +53,8 @@ body h3, .content-container ul, .content-container ol {
   font-size: 24px;
 }
 
-body h3, .content-container ul, .content-container ol, .feature-text {
+body h3, .content-container ul, .content-container ol, .feature-text,
+.content-container-v2 ul, .content-container-v2 ol {
   font-family: "Darker Grotesque", sans-serif;
 }
 
@@ -83,8 +97,12 @@ body h3, .content-container ul, .content-container ol, .feature-text {
 
 /* ? Breakpoint for mobile */
 @media screen and (max-width: 700px) {
+  .section {
+    margin-top: 20%;
+  }
   .two-column, .video-container {
     grid-template-columns: 1fr;
+    row-gap: 0.5em;
   }
   body h2 {
     font-size: 20px;
@@ -95,8 +113,14 @@ body h3, .content-container ul, .content-container ol, .feature-text {
   .feature-text {
     font-size: 16px;
   }
+  .content-container, .content-container-v2 {
+    padding: 10%;
+  }
   .content-container-v2 #old-profile {
     width: 150px;
+  }
+  footer h4 {
+    font-size: 22px;
   }
 }
 
