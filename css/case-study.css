@@ -83,7 +83,7 @@ body h3, .content-container ul, .content-container ol, .feature-text {
 
 /* ? Breakpoint for mobile */
 @media screen and (max-width: 700px) {
-  .two-column {
+  .two-column, .video-container {
     grid-template-columns: 1fr;
   }
   body h2 {
@@ -95,7 +95,7 @@ body h3, .content-container ul, .content-container ol, .feature-text {
   .feature-text {
     font-size: 16px;
   }
-  .content-container-2 #old-profile {
+  .content-container-v2 #old-profile {
     width: 150px;
   }
 }
