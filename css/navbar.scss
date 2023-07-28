@@ -49,7 +49,7 @@ $mobile-background-color: rgba(252, 223, 164, 0.40);
     padding: 0 6vw 0 6vw;
   }
   .navbar-top-mobile {
-    padding: 6vw;
+    padding: 4vw 6vw 4vw 6vw;
   }
 
   a {
@@ -79,6 +79,7 @@ $mobile-background-color: rgba(252, 223, 164, 0.40);
 @media screen and (max-width: 900px) {
   #nav-menu {
     font-size: 28px;
+    padding: 0;
 
     .navbar {
       display: none;
