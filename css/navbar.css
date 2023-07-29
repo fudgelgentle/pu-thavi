@@ -45,7 +45,7 @@
   text-decoration: none;
 }
 #nav-menu #logo-img-mobile, #nav-menu #hamburger-mobile {
-  height: 0.7rem;
+  height: 1rem;
 }
 #nav-menu #hamburger-mobile {
   cursor: pointer;
