@@ -59,7 +59,7 @@ $mobile-background-color: rgba(252, 223, 164, 0.40);
   }
 
   #logo-img-mobile, #hamburger-mobile {
-    height: 0.7em;
+    height: 0.7rem;
   }
 
   #hamburger-mobile {
@@ -78,7 +78,7 @@ $mobile-background-color: rgba(252, 223, 164, 0.40);
 /* ? Breakpoint for mobile */
 @media screen and (max-width: 900px) {
   #nav-menu {
-    font-size: 28px;
+    font-size: 20px;
     padding: 0;
 
     .navbar {

@@ -45,7 +45,7 @@
   text-decoration: none;
 }
 #nav-menu #logo-img-mobile, #nav-menu #hamburger-mobile {
-  height: 0.7em;
+  height: 0.7rem;
 }
 #nav-menu #hamburger-mobile {
   cursor: pointer;
@@ -61,7 +61,7 @@
 /* ? Breakpoint for mobile */
 @media screen and (max-width: 900px) {
   #nav-menu {
-    font-size: 28px;
+    font-size: 20px;
     padding: 0;
   }
   #nav-menu .navbar {
