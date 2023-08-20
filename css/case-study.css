@@ -1,3 +1,7 @@
+body {
+  padding-bottom: 10%;
+}
+
 .content-container {
   padding: 5% 10% 5% 10%;
 }
@@ -19,10 +23,6 @@ footer h4 {
   font-size: 32px;
 }
 
-body {
-  padding-bottom: 10%;
-}
-
 .content-container-v2 {
   padding: 5% 10% 5% 10%;
 }
@@ -32,9 +32,25 @@ body {
   display: block;
   width: 300px;
 }
+.content-container-v2 img.arrow-down {
+  margin-top: 5em;
+  animation: downUp 3s ease-in-out infinite;
+}
 
+@keyframes downUp {
+  0%, 100% {
+    transform: translateY(0); /* Starting position */
+  }
+  50% {
+    transform: translateY(50px); /* Move down by 50px */
+  }
+}
 .blue-background {
   background-color: #E6F4F6;
+}
+
+.mercular-blue-background {
+  background-color: #F3FCFF;
 }
 
 body h2 {
@@ -93,6 +109,14 @@ body h3, .content-container ul, .content-container ol, .feature-text,
 .video-container video {
   width: 100%;
   height: 100%;
+}
+
+section img {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* ? Breakpoint for mobile */
