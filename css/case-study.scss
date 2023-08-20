@@ -1,11 +1,13 @@
-$h2-font: 'Alata', sans-serif;
-$h3-font: 'Darker Grotesque', sans-serif;
+$primary-font: 'Alata', sans-serif;
+$secondary-font: 'Darker Grotesque', sans-serif;
+$persona-button-color: #5fc5ff;
+$persona-button-color-hover: #56B1E5;
 
 body {
   padding-bottom: 10%;
 }
 
-.content-container {
+.content-container, .content-container-v2 {
   padding: 5% 10% 5% 10%;
 
   ul li:nth-child(n+2), ol li:nth-child(n+2) {
@@ -23,12 +25,11 @@ footer h4 {
   position: sticky;
   text-align: center;
   margin-top: 5%;
-  font-family: $h3-font;
+  font-family: $secondary-font;
   font-size: 32px;
 }
 
 .content-container-v2 {
-  padding: 5% 10% 5% 10%;
 
   #old-profile {
     filter: drop-shadow(0px 8px 8px rgba(24, 39, 75, 0.08)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -61,7 +62,7 @@ footer h4 {
 }
 
 body h2 {
-  font-family: $h2-font;
+  font-family: $primary-font;
   font-size: 40px;
   color: #363636;
 }
@@ -77,8 +78,8 @@ body h3, .content-container ul, .content-container ol,
 }
 
 body h3, .content-container ul, .content-container ol, .feature-text,
-.content-container-v2 ul, .content-container-v2 ol {
-  font-family: $h3-font;
+.content-container-v2 ul, .content-container-v2 ol, .persona-button {
+  font-family: $secondary-font;
 }
 
 .header-img {
@@ -162,6 +163,57 @@ section img {
   max-width: 100%;
 }
 
+.persona-btn-container {
+  display: block;
+  text-align: center;
+}
+
+.persona-button {
+  text-align: center;
+  border: none;
+  background-color: $persona-button-color;
+  // top, right, bottom, left
+  padding: 20px 30px 20px 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  border-radius: 12px;
+}
+
+.persona-button:hover {
+  background-color: $persona-button-color-hover;
+  transition: all 0.5s;
+}
+
+body .prototype-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  img {
+    height: 30%;
+    width: 30%;
+  }
+}
+
+.robot-pict-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+
+  img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .take-time-off {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+
+
 /* ? Breakpoint for mobile */
 @media screen and (max-width: 700px) {
 
@@ -178,7 +230,7 @@ section img {
     font-size: 20px;
   }
 
-  body h3, .content-container ul, .content-container ol {
+  body h3, .content-container ul, .content-container ol, .persona-button {
     font-size: 22px;
   }
 
