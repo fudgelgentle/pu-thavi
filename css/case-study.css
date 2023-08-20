@@ -200,7 +200,7 @@ body .prototype-photos img {
   body h2 {
     font-size: 20px;
   }
-  body h3, .content-container ul, .content-container ol, .persona-button {
+  body h3, .content-container ul, .content-container ol, .content-container-v2 ul, .content-container-v2 ol, .persona-button {
     font-size: 22px;
   }
   .feature-text {
