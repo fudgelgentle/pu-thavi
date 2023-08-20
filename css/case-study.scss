@@ -110,6 +110,38 @@ body h3, .content-container ul, .content-container ol, .feature-text,
   grid-template-columns: 40% 60%;
 }
 
+.grid-logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  // gap: 1em;
+
+  img {
+    max-width: 80%;
+  }
+}
+
+.title {
+  max-width: 100%;
+}
+
+.logo-container {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-right: 3em;
+
+  .flex-logo {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+
+  img {
+    width: 80%;
+  }
+}
+
+
 .video-container {
   display: grid;
   align-items: center;
