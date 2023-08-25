@@ -73,12 +73,17 @@ body h3, .content-container ul, .content-container ol,
   color: #333333;
 }
 
+body h5 {
+  font-size: 22px;
+  color: gray;
+}
+
 .feature-text {
   font-size: 24px;
 }
 
 body h3, .content-container ul, .content-container ol, .feature-text,
-.content-container-v2 ul, .content-container-v2 ol, .persona-button {
+.content-container-v2 ul, .content-container-v2 ol, .persona-button, h5 {
   font-family: $secondary-font;
 }
 
@@ -248,6 +253,10 @@ body .prototype-photos {
 
   footer h4 {
     font-size: 22px;
+  }
+
+  body h5 {
+    font-size: 16px;
   }
 
 }

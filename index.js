@@ -4,8 +4,29 @@
 
   window.addEventListener('load', init);
 
+  const cPalette = ['#F4B942', '#9E2A2B', '#6A994E', '#42664E', '#EDE8C7'];
+
+  // The length of the text 'Pu Thavikulwat'
+  const nameLength = 14;
+
   function init() {
     window.addEventListener('scroll', handleScrollBehavior);
+    alternateColorText();
+  }
+
+  function alternateColorText() {
+    for (let i = 0; i < 1000; i++) {
+      console.log('run');
+      for (let j = 1; j <= nameLength; j++) {
+        let txtString = 'txt-' + j;
+        setTimeout(() => {
+          id(txtString).style.color = cPalette[Math.floor(Math.random() * (cPalette.length + 1))];
+          console.log('index = ' + Math.floor(Math.random() * 7));
+        }, i * 100 + j * 100);
+        // id(txtString).style.color = cPalette[Math.floor(Math.random() * 7)];
+      }
+    }
+
   }
 
   function handleScrollBehavior() {
@@ -15,15 +36,6 @@
     } else if (getScrollPercent() >= 5) {
       blurValue = 4;
     }
-    // } else if (getScrollPercent() >= 10 && getScrollPercent() < 15) {
-    //   blurValue = 10;
-    // } else if (getScrollPercent() >= 15 && getScrollPercent() < 30) {
-    //   blurValue = 15;
-    // } else if (getScrollPercent() >= 30 && getScrollPercent() < 40) {
-    //   blurValue = 20;
-    // } else {
-    //   blurValue = 30;
-    // }
     qs('.overlay').style.backdropFilter = `blur(${blurValue}px)`;
   }
 

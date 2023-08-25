@@ -29,13 +29,17 @@ body {
   min-height: 100vh;
 }
 
+.name-container > * {
+  transition: all 1s;
+}
+
 footer h4 {
   position: sticky;
   text-align: center;
   margin-top: 10%;
 }
 
-h1 {
+h1, .h1 {
   font-size: 64px;
 }
 h2 {
@@ -51,7 +55,7 @@ h5, p {
   font-size: 28px;
 }
 
-h1, h2, h3, h4, h5, p, a {
+h1, .h1, h2, h3, h4, h5, p, a {
   margin: 0;
   font-family: $home-page-font;
   font-weight: 400;
@@ -193,7 +197,7 @@ h1, h2, h3, h4, h5, p, a {
 
 /* ? Breakpoint for mobile */
 @media screen and (max-width: 700px) {
-  body h1 {
+  body h1, body .h1 {
     font-size: 36px;
   }
 
