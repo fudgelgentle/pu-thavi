@@ -131,7 +131,7 @@ h1, .h1, h2, h3, h4, h5, p, a {
   background: rgba(242, 251, 255, 0.95);
 }
 .case-studies .card-container #beatbuddy-description {
-  background: rgba(75, 75, 75, 0.9);
+  background: rgba(32, 61, 88, 0.9);
   color: white;
 }
 .case-studies .card-container #markthai-description {
@@ -155,7 +155,7 @@ h1, .h1, h2, h3, h4, h5, p, a {
   transition: 0.5s;
 }
 .card-container:hover #beatbuddy-description {
-  background: #333333;
+  background: #203D58;
   transition: 0.5s;
 }
 .card-container:hover #markthai-description {
@@ -207,7 +207,7 @@ h1, .h1, h2, h3, h4, h5, p, a {
     background: #BBE1F2;
   }
   .case-studies .card-container #beatbuddy-description {
-    background: #333333;
+    background: #203D58;
     color: white;
   }
   .case-studies .card-container #markthai-description {
