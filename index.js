@@ -4,12 +4,18 @@
 
   window.addEventListener('load', init);
 
-  const cPalette = ['#F4B942', '#9E2A2B', '#6A994E', '#42664E', '#EDE8C7'];
+  const cPalette = ['#F4B942', '#9E2A2B', '#6A994E', '#42664E', '#FCDFA4'];
 
   // The length of the text 'Pu Thavikulwat'
   const nameLength = 14;
 
   function init() {
+    qs('.overlay').style.backdropFilter = `blur(${15}px)`;
+    setTimeout(() => {
+      qs('.overlay').style.backdropFilter = `blur(${1}px)`;
+    }, 1000);
+    // qs('.overlay').style.transition = 'ease 0.3s';
+
     window.addEventListener('scroll', handleScrollBehavior);
     alternateColorText();
   }
@@ -26,7 +32,6 @@
         // id(txtString).style.color = cPalette[Math.floor(Math.random() * 7)];
       }
     }
-
   }
 
   function handleScrollBehavior() {
