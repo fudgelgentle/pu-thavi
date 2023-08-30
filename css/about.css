@@ -73,6 +73,7 @@
 }
 .mobile-container .carousel-wrapper .carousel {
   overflow: hidden;
+  transform-style: preserve-3d;
 }
 .mobile-container .carousel-wrapper .carousel-photo {
   opacity: 0;
