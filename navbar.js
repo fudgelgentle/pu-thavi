@@ -40,7 +40,7 @@
             <ul>
               <li><a href="/">Case Studies</a></li>
               <li><a href="/">Coding</a></li>
-              <li><a href="/about.html">About Me</a></li>
+              <li><a href="/about">About Me</a></li>
             </ul>
           </nav>
         </div>
