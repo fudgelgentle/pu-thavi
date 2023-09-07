@@ -21,8 +21,8 @@
 
           <ul class="nav-links">
             <div class="menu">
-              <li><a href="/">Case Studies</a></li>
-              <li><a href="/">Coding</a></li>
+              <li><a href="#case-stdy">Case Studies</a></li>
+              <li><a href="#coding-projects">Coding</a></li>
               <li><a href="/about">About Me</a></li>
             </div>
           </ul>
