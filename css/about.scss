@@ -47,13 +47,19 @@
   body .grid-container {
     display: none;
   }
+
+  .background-wrapper {
+    padding-top: 10em;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
-.background-wrapper {
-  padding-top: 10em;
-  margin-left: 5%;
-  margin-right: 5%;
-}
+// .background-wrapper {
+//   padding-top: 10em;
+//   margin-left: 5%;
+//   margin-right: 5%;
+// }
 
 .mobile-container {
   display: none;
