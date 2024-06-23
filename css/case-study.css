@@ -193,6 +193,14 @@ body .prototype-photos img {
   height: 60%;
 }
 
+.before-after-container {
+  margin-top: 2rem;
+}
+
+.before-after-text {
+  margin-bottom: 10px;
+}
+
 /* ? Breakpoint for mobile */
 @media screen and (max-width: 700px) {
   .section {
