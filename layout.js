@@ -9,7 +9,6 @@
   function init() {
 
     if (window.innerWidth > 700) {
-      console.log('not safari.. applying changes');
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {

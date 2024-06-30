@@ -144,7 +144,6 @@
   let photos = qsa('.carousel-photo');
   // Stores the html element that contains the current photo
   let currentPhoto = getInitialElement(photos);
-  console.log('current photo = ', currentPhoto);
   // n = how many photos are there
   let n = photos.length;
 
@@ -159,7 +158,7 @@
   }
 
   function updateCurrentIndicator() {
-    console.log('update curr indicator')
+    ('update curr indicator')
 
     // Remove active class from previous indicator
     let activeIndicator = getActiveElement(indicators);
@@ -169,7 +168,6 @@
 
     // Add active class to current indicator
     let currIndex = parseInt(currentPhoto.id);
-    console.log('currIndex = ' + currIndex)
     indicators[currIndex - 1].classList.add('active');
 
     removeInitialClass(getInitialElement(indicators));
@@ -177,8 +175,6 @@
 
   function goNext() {
     let nextPhoto = (parseInt(currentPhoto.id) % n) + 1;
-    console.log('currentPhoto = ' + currentPhoto.id);
-    console.log('nextPhoto = ' + nextPhoto);
     currentPhoto.classList.remove('active');
     photos[nextPhoto - 1].classList.add('active');
 
@@ -188,8 +184,6 @@
   }
 
   function goPrev() {
-    console.log(currentPhoto);
-    console.log(parseInt(currentPhoto.id));
     let oldPhoto = (parseInt(currentPhoto.id));
 
     let nextPhoto;
@@ -198,8 +192,6 @@
     } else {
       nextPhoto = oldPhoto - 1;
     }
-    console.log('currentPhoto = ' + oldPhoto);
-    console.log('nextPhoto = ' + nextPhoto);
     currentPhoto.classList.remove('active');
     photos[nextPhoto - 1].classList.add('active');
 
@@ -211,8 +203,6 @@
   function getActiveElement(nodeList) {
     for (let i = 0; i < nodeList.length; i++) {
       if (nodeList[i].classList.contains('active')) {
-        console.log('active photo = ');
-        console.log(nodeList[i]);
         return nodeList[i];
       }
     }
@@ -222,7 +212,6 @@
   function getInitialElement(nodeList) {
     for (let i = 0; i < nodeList.length; i++) {
       if (nodeList[i].classList.contains('initial')) {
-        console.log('initial photo = ', nodeList[i]);
         return nodeList[i];
       }
     }
@@ -231,7 +220,6 @@
 
   function removeInitialClass(element) {
     if (element !== null) {
-      console.log('element = ', element);
       element.classList.remove('initial');
     }
   }

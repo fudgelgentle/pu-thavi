@@ -22,12 +22,10 @@
 
   function alternateColorText() {
     for (let i = 0; i < 1000; i++) {
-      console.log('run');
       for (let j = 1; j <= nameLength; j++) {
         let txtString = 'txt-' + j;
         setTimeout(() => {
           id(txtString).style.color = cPalette[Math.floor(Math.random() * (cPalette.length + 1))];
-          console.log('index = ' + Math.floor(Math.random() * 7));
         }, i * 100 + j * 100);
         // id(txtString).style.color = cPalette[Math.floor(Math.random() * 7)];
       }
@@ -50,7 +48,6 @@
     st = 'scrollTop',
     sh = 'scrollHeight';
     let scrollPercent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-    console.log('scrollPercent = ' + scrollPercent)
     return scrollPercent;
   }
 

@@ -66,7 +66,6 @@
   }
 
   function toggleHamburger() {
-    console.log('toggleHamburger called');
     let style2 = window.getComputedStyle(qs('.navbar-mobile'));
 
     if (style2.display === 'none') {
