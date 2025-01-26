@@ -1,0 +1,49 @@
+$primary-font: 'Alata', sans-serif;
+$secondary-font: 'Darker Grotesque', sans-serif;
+
+h2 {
+  font-family: $primary-font;
+  font-size: 40px;
+  color: #363636;
+}
+
+h3, .content-container ul, .content-container ol, .feature-text,
+.content-container-v2 ul, .content-container-v2 ol, .persona-button, h5 {
+  font-family: $secondary-font;
+}
+
+h3, .content-container ul, .content-container ol,
+.content-container-v2 ul, .content-container-v2 ol {
+  font-size: 28px;
+  color: #333333;
+}
+
+h5 {
+  font-size: 22px;
+  color: gray;
+}
+
+footer h4 {
+  font-family: $secondary-font;
+  font-size: 32px;
+}
+
+/* ? Breakpoint for mobile */
+@media screen and (max-width: 700px) {
+
+  body h2 {
+    font-size: 20px;
+  }
+
+  body h3, .content-container ul, .content-container ol, .content-container-v2 ul, .content-container-v2 ol, .persona-button {
+    font-size: 22px;
+  }
+
+  footer h4 {
+    font-size: 22px;
+  }
+
+  body h5 {
+    font-size: 16px;
+  }
+}

@@ -1,5 +1,10 @@
 body {
-  padding-bottom: 10%;
+  padding-bottom: 12%;
+}
+
+.lexend-font {
+  font-family: "Lexend", serif !important;
+  background-color: red !important;
 }
 
 .content-container, .content-container-v2 {
@@ -15,8 +20,12 @@ body {
   list-style-type: disc; /* To use disc bullets for unordered lists (default) */
 }
 
-.content-container-v3 {
-  padding: 5% 20% 5% 20%;
+footer h4 {
+  position: sticky;
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 32px;
 }
 
 .content-container-v2 #old-profile {
@@ -44,6 +53,32 @@ body {
 
 .mercular-blue-background {
   background-color: #F3FCFF;
+}
+
+body h2 {
+  font-family: "Alata", sans-serif;
+  font-size: 40px;
+  color: #363636;
+}
+
+body h3, .content-container ul, .content-container ol,
+.content-container-v2 ul, .content-container-v2 ol {
+  font-size: 28px;
+  color: #333333;
+}
+
+body h5 {
+  font-size: 22px;
+  color: gray;
+}
+
+.feature-text {
+  font-size: 24px;
+}
+
+body h3, .content-container ul, .content-container ol, .feature-text,
+.content-container-v2 ul, .content-container-v2 ol, .persona-button, h5 {
+  font-family: "Darker Grotesque", sans-serif;
 }
 
 .header-img {
@@ -118,10 +153,6 @@ section img {
   max-width: 100%;
 }
 
-.feature-text {
-  font-size: 24px;
-}
-
 .persona-btn-container {
   display: block;
   text-align: center;
@@ -176,14 +207,26 @@ body .prototype-photos img {
     grid-template-columns: 1fr;
     row-gap: 0.5em;
   }
+  body h2 {
+    font-size: 20px;
+  }
+  body h3, .content-container ul, .content-container ol, .content-container-v2 ul, .content-container-v2 ol, .persona-button {
+    font-size: 22px;
+  }
   .feature-text {
     font-size: 16px;
   }
-  .content-container, .content-container-v2, .content-container-v3 {
+  .content-container, .content-container-v2 {
     padding: 10%;
   }
   .content-container-v2 #old-profile {
     width: 150px;
+  }
+  footer h4 {
+    font-size: 22px;
+  }
+  body h5 {
+    font-size: 16px;
   }
 }
 

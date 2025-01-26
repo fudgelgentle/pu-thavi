@@ -1,0 +1,474 @@
+// Specific css file for living-sustainability.html ONLY
+$bold: 700;
+$regular: 400;
+$light: 300;
+
+$eco-background: #E1EDE8;
+$eco-background-2: #DBEEE3;
+$eco-background-3: #C3E1D0;
+$eco-bold: #5A9B6E;
+
+:root {
+  --dynamic-font-size: calc(12px + 0.590625vw);
+}
+
+body {
+  font-family: "Lexend", serif;
+  margin: 0 auto;
+}
+
+.lexend-bold {
+  font-weight: $bold;
+}
+.lexend-reg {
+  font-weight: $regular;
+}
+.lexend-light {
+  font-weight: $light;
+}
+
+
+h1 {
+  font-size: 36px !important;
+}
+h2 {
+  font-size: 32px !important;
+  font-weight: $regular !important;
+}
+h3 {
+  font-size: 28px !important;
+}
+h4 {
+  font-size: 24px !important;
+}
+h5, p, .formative-study ul li {
+  font-size: 20px !important;
+}
+.prototype-title, .iteration-title, .formative-text, .title-category, .justification-section {
+  font-size: calc(var(--dynamic-font-size) * 0.7);
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100% !important;
+}
+
+footer span {
+  position: sticky;
+  display: block;
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 400;
+  font-size: calc(var(--dynamic-font-size) * 1.2);
+}
+
+.p-less-margin {
+  // t r b l
+  margin: 4px 0 4px 0;
+}
+.mb-12 {
+  margin-bottom: 12px !important;
+}
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+.mb-24 {
+  margin-bottom: 24px !important;
+}
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+.mb-48 {
+  margin-bottom: 48px !important;
+}
+.mb-64 {
+  margin-bottom: 64px !important;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+.mt-56 {
+  margin-top: 56px
+}
+.mt-64 {
+  margin-top: 64px;
+}
+
+// Margin top 64px for desktop, 32px for mobile
+.mt-d-64-m-32 {
+  margin-top: 64px;
+}
+
+p, .formative-study ul li, .showcase-li {
+  color: #333333;
+}
+p, .formative-study ul li, .iteration-container ul li, .showcase-li {
+  font-weight: $light;
+}
+
+.formative-study ul li, .iteration-container ul li, .showcase-li {
+  margin-top: 16px;
+}
+
+.br-4 {
+  border-radius: 4px;
+}
+.br-8 {
+  border-radius: 8px;
+}
+.br-12 {
+  border-radius: 12px;
+}
+.br-16 {
+  border-radius: 16px;
+}
+
+.pd-4 {
+  padding: 4px;
+}
+.pd-8 {
+  padding: 8px;
+}
+.pd-12 {
+  padding: 12px;
+}
+.pd-16 {
+  padding: 16px;
+}
+.pd-20 {
+  padding: 20px;
+}
+.pd-24 {
+  padding: 24px;
+}
+
+.icon-12 {
+  width: 12px;
+  height: 12px;
+}
+.icon-16 {
+  width: 16px;
+  height: 16px;
+}
+.icon-20 {
+  width: 20px;
+  height: 20px;
+}
+.icon-24 {
+  width: 24px;
+  height: 24px;
+}
+.eco-bold {
+  color: $eco-bold;
+}
+.width-80 {
+  width: 80%;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.research-section {
+  background-color: $eco-background;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  position: relative;
+  // t, r, b, l
+  padding: 32px 36px 32px 36px;
+
+  #research-link-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: calc(var(--dynamic-font-size));
+    height: calc(var(--dynamic-font-size));
+  }
+
+  #research-link-icon, .r-title {
+    cursor: pointer;
+  }
+
+  .r-title {
+    font-weight: $bold;
+    font-size: calc(var(--dynamic-font-size) * 0.9);
+  }
+  .r-title:hover {
+    text-decoration: underline;
+  }
+  .r-description {
+    color: #333333;
+    font-weight: $light;
+  }
+  .r-status {
+    color: $eco-bold;
+  }
+  .r-description, .r-status {
+    font-size: calc(var(--dynamic-font-size) * 0.85);
+  }
+}
+
+#process-lg {
+  display: block;
+}
+#process-small {
+  display: none;
+}
+
+.title-category-container {
+  h2 {
+    margin-top: 0px;
+  }
+  .title-category {
+    color: $eco-bold;
+  }
+}
+
+.formative-study-results {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: 100%;
+
+  .formative-left, .formative-right {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  .formative-left {
+    margin-right: 20px;
+  }
+  .formative-right {
+    margin-left: 20px;
+  }
+  .separator {
+    width: 1px;
+    background-color: #59996C;
+    height: auto;
+  }
+  .formative-facts-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 24px;
+
+    .formative-facts {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 12px;
+      background-color: $eco-background-2;
+      padding: 32px 28px 32px 28px;
+    }
+    .formative-num {
+      font-size: calc(var(--dynamic-font-size));
+    }
+  }
+
+}
+
+.market-research-container {
+  background-color: $eco-background;
+  padding: 48px 32px 48px 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.prototype-container, .iteration-container {
+  background-color: $eco-background;
+  padding: 32px 36px 32px 36px;
+  margin-bottom: 32px;
+
+  #prototype-1 {
+    margin-left: 0;
+    width: 60%;
+  }
+
+  .prototype-title {
+    display: inline-block;
+    border-radius: 8px;
+    padding: 16px 24px 16px 24px;
+    background-color: $eco-background-3;
+  }
+}
+
+.iteration-container {
+  position: relative;
+  .iteration-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px 0 8px 0;
+    padding: 16px 24px 16px 24px;
+    background-color: $eco-background-3;
+  }
+  img {
+    margin-top: 64px;
+    width: 70%;
+    image-rendering: high-quality;
+  }
+  .justification-section {
+    padding: 24px 36px 24px 36px;
+    background-color: #E7F6ED;
+  }
+  ul {
+    margin: 0;
+    padding-left: 16px;
+  }
+}
+
+.technical-container {
+  padding: 16px 24px 16px 24px;
+  background-color: #EEFFF5;
+
+  .problem-solution {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: $eco-background-2;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    img {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+
+  .technical-desc {
+    display: flex;
+    align-items: stretch;
+    margin-left: 16px;
+
+    .vl-container {
+      display: flex;
+      align-items: center;
+
+      .vl {
+        border-left: 2px solid #333333;
+        height: 90%;
+        margin-right: 24px;
+      }
+    }
+  }
+
+}
+
+/* ? Breakpoint for large screen */
+@media screen and (min-width: 1920px) {
+}
+
+/* ? Breakpoint for smaller desktop */
+@media screen and (max-width: 1500px) {
+  h1 {
+    font-size: 28px !important;
+  }
+  h2 {
+    font-size: 24px !important;
+    font-weight: $regular !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h5, p, .formative-study ul li, .showcase-li {
+    font-size: 18px !important;
+  }
+  #process-lg {
+    display: none;
+  }
+  #process-small {
+    display: block;
+  }
+  .iteration-container {
+    img {
+      width: 90%;
+    }
+  }
+}
+
+/* ? Breakpoint for mobile */
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 24px !important;
+  }
+  h2 {
+    font-size: 14px !important;
+    font-weight: $regular !important;
+  }
+  h3 {
+    font-size: 14px !important;
+  }
+  h5, p, .formative-study ul li, .showcase-li {
+    font-size: 14px !important;
+  }
+  .formative-study-results {
+    .formative-left {
+      margin-right: 8px;
+    }
+    .formative-right {
+      margin-left: 8px;
+    }
+    .formative-left, .formative-right {
+      padding: 12px;
+    }
+
+    .formative-facts-container {
+      .formative-facts {
+        padding: 20px 16px 20px 16px;
+      }
+    }
+  }
+
+  .market-research-container {
+    padding: 24px 16px 24px 16px;
+    gap: 12px;
+  }
+
+  .prototype-container, .iteration-container {
+    padding: 16px 18px 16px 18px;
+    margin-bottom: 32px;
+    .prototype-title {
+      border-radius: 6px;
+      padding: 8px 12px 8px 12px;
+    }
+  }
+
+  .iteration-container {
+    .iteration-title {
+      padding: 8px 12px 8px 12px;
+    }
+    img {
+      margin-top: 32px;
+    }
+    .justification-section {
+      padding: 20px 24px 20px 24px;
+      background-color: #E7F6ED;
+    }
+  }
+
+  .technical-container {
+    padding: 20px;
+    .technical-desc {
+      .vl-container {
+        .vl {
+          border-left: 1px solid #333333;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  .mt-d-64-m-32 {
+    margin-top: 32px;
+  }
+
+
+}
+

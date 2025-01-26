@@ -1,0 +1,183 @@
+.grid-container {
+  padding-top: 10em;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-auto-rows: 1fr;
+  width: 70%;
+  column-gap: 5%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-container .about-me {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 3em;
+}
+
+.grid-container .about-me h4 {
+  margin-top: 1em;
+}
+
+.grid-container .picture {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  row-gap: 3em;
+}
+
+.grid-container .picture img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-me, .picture img, .carousel img {
+  border-radius: 10px;
+}
+
+/* ? Breakpoint for mobile */
+@media screen and (max-width: 900px) {
+  body .mobile-container {
+    display: block;
+  }
+  body .grid-container {
+    display: none;
+  }
+  .background-wrapper {
+    padding-top: 10em;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+.mobile-container {
+  display: none;
+  padding: 2em 1em 2em 1em;
+  position: relative;
+  background-color: aliceblue;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mobile-container h1 {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.mobile-container h4 {
+  margin-top: 1em;
+}
+
+.mobile-container .carousel-wrapper {
+  overflow: hidden;
+  width: 90%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-container .carousel-wrapper .carousel {
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.mobile-container .carousel-wrapper .carousel-photo {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  z-index: 100;
+  transition: transform 1s, opacity 1s, z-index 1s;
+}
+
+.mobile-container .carousel-wrapper .carousel-photo.initial, .mobile-container .carousel-wrapper .carousel-photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.mobile-container .carousel-wrapper .carousel-photo.prev, .mobile-container .carousel-wrapper .carousel-photo.next {
+  z-index: 800;
+}
+
+.mobile-container .carousel-wrapper .carousel-photo.prev {
+  transform: translateX(-100%);
+}
+
+.mobile-container .carousel-wrapper .carousel-photo.next {
+  transform: translateX(100%);
+}
+
+.mobile-container .carousel-wrapper .indicator-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 1em;
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1001;
+}
+
+.mobile-container .carousel-wrapper .indicator {
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  background: white;
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: all 1s;
+}
+
+.mobile-container .carousel-wrapper .indicator.initial, .mobile-container .carousel-wrapper .indicator.active {
+  background: #9E2A2B;
+}
+
+.mobile-container .carousel-wrapper .carousel-button-prev, .mobile-container .carousel-wrapper .carousel-button-next {
+  position: absolute;
+  top: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #9E2A2B;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+  border: 1px solid white;
+}
+
+.mobile-container .carousel-wrapper .carousel-button-prev {
+  left: 5%;
+}
+
+.mobile-container .carousel-wrapper .carousel-button-next {
+  right: 5%;
+}
+
+.mobile-container .carousel-wrapper .carousel-button-prev::after, .mobile-container .carousel-wrapper .carousel-button-next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.mobile-container .carousel-wrapper .carousel-button-next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+/*# sourceMappingURL=about.css.map */

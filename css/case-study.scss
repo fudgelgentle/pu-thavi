@@ -1,5 +1,3 @@
-$primary-font: 'Alata', sans-serif;
-$secondary-font: 'Darker Grotesque', sans-serif;
 $persona-button-color: #5fc5ff;
 $persona-button-color-hover: #56B1E5;
 
@@ -21,12 +19,8 @@ body {
   }
 }
 
-footer h4 {
-  position: sticky;
-  text-align: center;
-  margin-top: 5%;
-  font-family: $secondary-font;
-  font-size: 32px;
+.content-container-v3 {
+  padding: 5% 20% 5% 20%;
 }
 
 .content-container-v2 {
@@ -61,31 +55,6 @@ footer h4 {
   background-color: #F3FCFF;
 }
 
-body h2 {
-  font-family: $primary-font;
-  font-size: 40px;
-  color: #363636;
-}
-
-body h3, .content-container ul, .content-container ol,
-.content-container-v2 ul, .content-container-v2 ol {
-  font-size: 28px;
-  color: #333333;
-}
-
-body h5 {
-  font-size: 22px;
-  color: gray;
-}
-
-.feature-text {
-  font-size: 24px;
-}
-
-body h3, .content-container ul, .content-container ol, .feature-text,
-.content-container-v2 ul, .content-container-v2 ol, .persona-button, h5 {
-  font-family: $secondary-font;
-}
 
 .header-img {
   padding-top: 5rem;
@@ -168,6 +137,10 @@ section img {
   max-width: 100%;
 }
 
+.feature-text {
+  font-size: 24px;
+}
+
 .persona-btn-container {
   display: block;
   text-align: center;
@@ -231,32 +204,16 @@ body .prototype-photos {
     row-gap: 0.5em;
   }
 
-  body h2 {
-    font-size: 20px;
-  }
-
-  body h3, .content-container ul, .content-container ol, .content-container-v2 ul, .content-container-v2 ol, .persona-button {
-    font-size: 22px;
-  }
-
   .feature-text {
     font-size: 16px;
   }
 
-  .content-container, .content-container-v2 {
+  .content-container, .content-container-v2, .content-container-v3 {
     padding: 10%;
   }
 
   .content-container-v2 #old-profile {
     width: 150px;
-  }
-
-  footer h4 {
-    font-size: 22px;
-  }
-
-  body h5 {
-    font-size: 16px;
   }
 
 }

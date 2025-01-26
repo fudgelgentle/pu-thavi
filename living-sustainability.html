@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ourdate | Pu Thavikulwat</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- & Put this in every page to use scrolling animation -->
+    <script defer src="layout.js"></script>
+    <link rel="stylesheet" href="css/layout.css">
+    <!-- & Put this in every page to use scrolling animation -->
+
+    <!-- & Put this in every page to populate navbar -->
+    <script src="navbar.js"></script>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/living-sustainability.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/case-study.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- & Put this in every page to populate navbar -->
+    <link rel="icon" type="image/png" href="img/favicon_pu.png">
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ML1WFK5FFS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ML1WFK5FFS');
+  </script>
+  <body>
+
+    <!-- & Put this in every page to populate navbar -->
+    <div id="nav-placeholder"></div>
+    <!-- & Put this in every page to populate navbar -->
+
+    <img src="img/living-sustainability/lca_viz_poster_big.png" class="hide-long header-img" alt="Living sustainability cover photo">
+
+    <section class="content-container-v3">
+      <div class="project-info hide">
+        <div class="timeline">
+          <h2>Timeline</h2>
+          <div class="detail">
+            <p class="lexend-light">June - December 2024</p>
+          </div>
+        </div>
+        <div>
+          <h2>Responsibilities</h2>
+          <div>
+            <div class="mb-24">
+              <p class="p-less-margin"><span class="lexend-reg">Design</span></p>
+              <div class="lexend-light">
+                <p class="p-less-margin">User Research</p>
+                <p class="p-less-margin">Prototyping</p>
+                <p class="p-less-margin">UX/UI Design</p>
+              </div>
+            </div>
+            <div>
+              <p class="p-less-margin"><span class="lexend-reg">Technical</span></p>
+              <div class="lexend-light">
+                <p class="p-less-margin">Fullstack Development</p>
+                <p class="p-less-margin">REST APIs</p>
+                <p class="p-less-margin">Prompt Engineering</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tools">
+          <h2>Tools</h2>
+          <div class="detail lexend-light">
+            <p>Figma, HTML, CSS, Javascript, Chart.js, Node.js, MongoDB, Slack</h3>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="title">
+          <h2>Background</h2>
+        </div>
+        <div class="desc hide">
+          <p>This project is an HCI research paper I completed with Zhihan Zhang, a third year Ph.D. student at Paul G. Allen School of Computer Science & Engineering:</p>
+          <div class="research-section br-12 pd-24 hide-long">
+            <span class="r-title">Living Sustainability: Creating Interactive Environmental Impact Visualizations by Augmenting Static Web Pages</span>
+            <span class="r-description">Zhihan Zhang, <b>Pu Thavikulwat</b>, Alexander Le Metzger, Yuxuan Mei, Felix Hähnlein, Zachary Englhardt, Tingyu Cheng, Shwetak Patel, Adriana Schulz, Vikram Iyer</span>
+            <span class="r-status"><b>Under Submission (IMWUT '25)</b></span>
+            <img src="/img/external_link.svg" alt="External link to research paper" id="research-link-icon">
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="title">
+          <h2>Process</h2>
+        </div>
+        <div class="desc hide">
+          <img src="/img/living-sustainability/process_large.png" alt="the process of this project" id="process-lg">
+          <img src="/img/living-sustainability/process_small.png" alt="the process of this project" id="process-small">
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="title-category-container">
+          <span class="title-category"><b>RESEARCH</b></span>
+          <div class="title">
+            <h2>Problem Discovery</h2>
+          </div>
+        </div>
+        <div class="hide">
+          <p>In today's digital age, both researchers and the public face challenges in interpreting complex data. Life-Cycle Assessment (LCA) and sustainability articles, often published as static PDFs or online text, hinder researchers' ability to extract and analyze data effectively.</p>
+          <p>Similarly, the public struggles to contextualize carbon emissions data like "10.3 kg CO₂-eq," which lacks relatable reference points, making it hard to understand its impact on daily decisions.</p>
+          <p>To address these challenges, we propose to explore the following research questions:</p>
+        </div>
+        <div class="desc hide">
+          <div class="research-section br-12 pd-24 hide-long">
+            <p>1. How can we enhance the ability of <span class="eco-bold"><b>LCA researchers</b></span> to extract, visualize, and analyze data within online research articles more effectively?</p>
+            <p>2. How can we help <span class="eco-bold"><b>environmentally conscious individuals</b></span> explore and understand the environmental impact of their choices and make more sustainable decisions?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="title">
+          <h2>Solution at a glance</h2>
+        </div>
+        <div class="hide">
+          <p>We developed Living Sustainability, an AI-based Chrome Extension that makes understanding carbon emissions easy and engaging by turning complex environmental data into interactive visualizations.</p>
+        </div>
+        <div>
+          <img src="img/living-sustainability/lca_preview_1.png" class="mb-16 br-12 hide">
+          <img src="img/living-sustainability/lca_preview_2.png" class="br-12 hide">
+        </div>
+      </div>
+
+      <div class="section formative-study">
+        <div class="title-category-container">
+          <span class="title-category"><b>RESEARCH</b></span>
+          <div class="title">
+            <h2>Formative Study</h2>
+          </div>
+        </div>
+        <div class="hide">
+          <p>I conducted a formative study interviewing environmentally conscious individuals and LCA researchers in order to learn about their:</p>
+        </div>
+        <ul class="hide-long">
+          <li>Understanding of carbon emissions</li>
+          <li>Current methods and pain points for finding carbon related information</li>
+          <li>Motivation to make sustainable decisions</li>
+        </ul>
+        <p class="mt-56"><b>This is what I learned from the formative study:</b></p>
+      </div>
+      <div class="formative-study-results hide">
+        <div class="formative-left">
+          <p class="eco-bold"><b>Individuals</b></p>
+          <div class="formative-facts-container mt-32">
+            <div class="formative-facts br-12">
+              <span class="formative-num eco-bold"><b>80%</b></span>
+              <span class="formative-text">Don't understand the meaning of 'CO₂e' on its own. They need a comparison or relatable example to put it into context.</span>
+            </div>
+
+            <div class="formative-facts br-12">
+              <span class="formative-num eco-bold"><b>70%</b></span>
+              <span class="formative-text">Finds it difficult and inconvenient to find the carbon emissions of a product they buy or a service they use.</span>
+            </div>
+
+            <div class="formative-facts br-12">
+              <span class="formative-num eco-bold"><b>90%</b></span>
+              <span class="formative-text">Wants a tool that help them understand the environmental impact of their choices.</span>
+            </div>
+          </div>
+        </div>
+        <div class="separator"></div>
+        <div class="formative-right">
+          <p class="eco-bold"><b>LCA researchers</b></p>
+          <div class="formative-facts-container mt-32">
+            <div class="formative-facts br-12">
+              <span class="formative-num eco-bold"><b>60%</b></span>
+              <span class="formative-text">Would benefit from a tool that helps them visualize carbon data from articles they read online.</span>
+            </div>
+
+            <div class="formative-facts br-12">
+              <span class="formative-num eco-bold"><b>70%</b></span>
+              <span class="formative-text">Wants a tool that help them understand the environmental impact of their choices.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="title-category-container">
+          <span class="title-category"><b>DESIGN</b></span>
+          <div class="title">
+            <h2>Ideation</h2>
+          </div>
+        </div>
+        <p class="hide">I researched different websites that provide carbon footprint estimation services for their users, and took notes on how they presented their data (e.g. charts and figures), what kind of carbon comparisons they make, and how they prompt users for information. This helped me figure out how I wanted my Chrome extension to work and what information would be the most helpful for users to see.</p>
+        <div class="market-research-container br-12">
+          <img src="img/living-sustainability/market_1.png" alt="Inspiration website 1" class="hide">
+          <img src="img/living-sustainability/market_2.png" alt="Inspiration website 2" class="hide">
+          <img src="img/living-sustainability/market_3.png" alt="Inspiration website 3" class="hide">
+          <img src="img/living-sustainability/market_4.png" alt="Inspiration website 4" class="hide">
+          <img src="img/living-sustainability/market_5.png" alt="Inspiration website 5" class="hide">
+          <img src="img/living-sustainability/market_6.png" alt="Inspiration website 6" class="hide">
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="title-category-container">
+          <span class="title-category"><b>DESIGN</b></span>
+          <div class="title">
+            <h2>Prototyping</h2>
+          </div>
+        </div>
+        <p class="hide">I created an initial prototype that explores different scenarios the user can interact with the extension.</p>
+        <div class="prototype-container br-12">
+          <div class="hide">
+            <span class="prototype-title mb-16">1. Highlight a text</span>
+          <img src="/img/living-sustainability/prototype_1.png" class="mb-32" id="prototype-1" alt="screenshot of the text highlight feature">
+          </div>
+
+          <div class="hide">
+            <span class="prototype-title mb-16">2. Display interactive carbon chart</span>
+            <img src="/img/living-sustainability/prototype_2.png" alt="screenshot of the text highlight feature with interactive chart displayed">
+          </div>
+        </div>
+        <div class="prototype-container br-12">
+          <div class="hide">
+            <span class="prototype-title mb-16">1. Detect shipping information on Fedex</span>
+            <img src="/img/living-sustainability/prototype_3.png" class="mb-32" alt="screenshot of the shipping emissions feature">
+          </div>
+          <div class="hide">
+            <span class="prototype-title mb-16">2. Display carbon emissions for shipping</span>
+            <img src="/img/living-sustainability/prototype_4.png" alt="screenshot of the shipping emissions feature when the popup window appears">
+          </div>
+        </div>
+        <div class="prototype-container br-12">
+          <div class="hide">
+            <span class="prototype-title mb-16">1. Detect virtual server information on Microsoft Azure</span>
+            <img src="/img/living-sustainability/prototype_5.png" class="mb-32" alt="screenshot of the cloud emissions feature">
+          </div>
+          <div class="hide">
+            <span class="prototype-title mb-16">2. Display carbon emissions for hosting virtual servers</span>
+            <img src="/img/living-sustainability/prototype_6.png" alt="screenshot of the cloud emissions feature when the popup window appears">
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="title-category-container">
+          <span class="title-category"><b>DESIGN & DEVELOPMENT</b></span>
+          <div class="title">
+            <h2>User Testing & Feature Improvements</h2>
+          </div>
+        </div>
+        <p class="hide">I implemented an iterative <b><span class="eco-bold">design-build-test</span></b> approach for the browser extension by first creating the design, developing the extension, and conducting user testing sessions with the functional product. This allowed users to interact with the extension in a real web environment, which revealed their natural browsing habits and areas of confusion. I then analyzed the testing data to identify the pain points, and implemented the design refinements.</p>
+        <div class="iteration-container br-12">
+          <span class="iteration-title">Interactive Chart</span>
+          <img src="/img/living-sustainability/iterative_1.png" class="hide" alt="screenshot of the iterative process of raw materials highlight feature">
+          <div class="justification-section br-12 pd-24 hide-long mt-32">
+            <span class="justification-text"><b>Final Design Justification:</b></span>
+            <ul>
+              <li><span class="lexend-reg">Pie Chart:</span> Changing the data visualization to a pie chart makes it easy for users to identify which raw materials have the largest environmental impact at a glance.</li>
+              <li><span class="lexend-reg">Total emissions:</span> Include the total emissions with a unit of comparison (e.g. miles driven) to help users see a bigger picture.</li>
+              <li><span class="lexend-reg">Parameters:</span> Implemented distinct UI patterns to establish a clear visual hierarchy and distinction between dependent materials (e.g. adipic acid, EPON 828, TBD) and standalone materials (e.g. woven glass fibre).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="iteration-container br-12">
+          <span class="iteration-title">Carbon Emissions of Shipping</span>
+          <img src="/img/living-sustainability/iterative_2.png" class="hide" alt="screenshot of the iterative process of shipping emissions feature">
+          <div class="justification-section br-12 pd-24 hide-long mt-32">
+            <span class="justification-text"><b>Final Design Justification:</b></span>
+            <ul>
+              <li><span class="lexend-reg">Interactive Geo-Maps:</span> Changing the data visualization to a pie chart makes it easy for users to identify which raw materials have the largest environmental impact at a glance.</li>
+              <li><span class="lexend-reg">Transportation Method Comparison:</span> Include the total emissions with a unit of comparison (e.g. miles driven) to help users see a bigger picture.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="iteration-container br-12">
+          <span class="iteration-title">Carbon Emissions of Mobile Devices</span>
+          <img src="/img/living-sustainability/iterative_3.png" class="hide" alt="screenshot of the iterative process of mobile device emissions feature">
+          <div class="justification-section br-12 pd-24 hide-long mt-32">
+            <span class="justification-text"><b>Final Design Justification:</b></span>
+            <ul>
+              <li><span class="lexend-reg">Phone comparison:</span> Removed the “Compare” button as users found manual searching overwhelming. The design now automatically selects two similar phones by price and specs, which reduces cognitive load.</li>
+              <li><span class="lexend-reg">Data Source and Tooltip:</span> Added “data source” and information tooltip to help users understand how the emissions are calculated and where the data is sourced from.</li>
+              <li><span class="lexend-reg">Emissions indicator:</span> Clearly indicates which options are more eco-friendly by visually emphasizing the option with lower emissions through color coding.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="title-category-container">
+          <span class="title-category"><b>DEVELOPMENT</b></span>
+          <div class="title">
+            <h2>Code Architecture</h2>
+          </div>
+        </div>
+        <p class="hide">Below is a diagram that roughly explains how Living Sustainability works under the hood.</p>
+        <img src="/img/living-sustainability/code_architecture.png" class="hide" alt="screenshot of the code architecture">
+      </div>
+
+      <div class="section">
+        <div class="title-category-container">
+          <span class="title-category"><b>DEVELOPMENT</b></span>
+          <div class="title">
+            <h2>Technical Challenges</h2>
+          </div>
+        </div>
+        <p class="hide">Being my first time ever developing a browser extension, I was not familiar with the restrictions placed by Chrome’s Content Security Policy (CSP), which created many limitations not typically encountered in web or app development. This was a great learning opportunity for me as I had to come up with different workarounds and approaches to bypass the CSP.</p>
+        <p class="hide">These are some of the challenges I faced and how I solved them:</p>
+
+        <div class="technical-container br-12 hide-long">
+          <div>
+            <div class="problem-solution br-12">
+              <img src="img/search-refraction.svg" class="icon-20">
+              <p><span class="lexend-reg">Problem:</span> Cannot install 3rd party libraries</p>
+            </div>
+            <div class="technical-desc mt-16 flex-center">
+              <div class="vl-container">
+                <div class="vl"></div>
+              </div>
+              <p>There are many 3rd party libraries I wanted to use like Chart.js, which is used to create interactive charts. These libraries are typically installed with npm or CDN scripts. However, CSP restricts the loading of external scripts/sources.</p>
+            </div>
+          </div>
+          <div>
+            <div class="problem-solution br-12 mt-32">
+              <img src="img/check-verified.svg" class="icon-20">
+              <p><span class="lexend-reg">Solution: </span>Using Command Line Interface (CLI)</p>
+            </div>
+            <div class="technical-desc mt-16 flex-center">
+              <div class="vl-container">
+                <div class="vl"></div>
+              </div>
+              <p>I did a lot of research online and found Extension CLI. This tool is able to bypass CSP restrictions by bundling libraries like Chart.js directly into the extension's build process, ensuring they are loaded as part of the extension's packaged resources rather than from external sources. With this, I was able to use Chart.js with my extension.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="technical-container br-12 mt-d-64-m-32 hide-long">
+          <div>
+            <div class="problem-solution br-12">
+              <img src="img/search-refraction.svg" class="icon-20">
+              <p><span class="lexend-reg">Problem:</span> Backends are not allowed</p>
+            </div>
+            <div class="technical-desc mt-16 flex-center">
+              <div class="vl-container">
+                <div class="vl"></div>
+              </div>
+              <p>Chrome extensions cannot have a traditional backend because they are designed to run entirely client-side, with all resources and logic packaged within the extension itself for performance and security.</p>
+            </div>
+          </div>
+          <div>
+            <div class="problem-solution br-12 mt-32">
+              <img src="img/check-verified.svg" class="icon-20">
+              <p><span class="lexend-reg">Solution: </span>Hosting my backend in a remotely hosted server</p>
+            </div>
+            <div class="technical-desc mt-16 flex-center">
+              <div class="vl-container">
+                <div class="vl"></div>
+              </div>
+              <p>I deployed my backend on a Node.js server and hosted it remotely with Fly.io. This allows the client-side to communicate with my hosted server through API calls, as the backend is not directly packaged with the client-side.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="technical-container br-12 mt-d-64-m-32 hide-long">
+          <div>
+            <div class="problem-solution br-12">
+              <img src="img/search-refraction.svg" class="icon-20">
+              <p><span class="lexend-reg">Problem:</span> Google Maps API is restricted by CSP</p>
+            </div>
+            <div class="technical-desc mt-16 flex-center">
+              <div class="vl-container">
+                <div class="vl"></div>
+              </div>
+              <p>Normal API calls that return text data are not restricted by CSP. However, the Google Maps API returns dynamically evaluated scripts to display a live geomap, which is strictly blocked by CSP.</p>
+            </div>
+          </div>
+          <div>
+            <div class="problem-solution br-12 mt-32">
+              <img src="img/check-verified.svg" class="icon-20">
+              <p><span class="lexend-reg">Solution: </span>Hosting geomap on the external server and importing it with iframes</p>
+            </div>
+            <div class="technical-desc mt-16 flex-center">
+              <div class="vl-container">
+                <div class="vl"></div>
+              </div>
+              <p>I created a workaround to properly load maps in the extension by hosting external HTML webpages on my server that connect with our backend. When the extension needs to create the geomap, it calls an endpoint on the backend, which retrieves the data and writes it to a hosted .js file. The backend then triggers the client-side of the hosted HTML webpage to generate a geomap using the Google Maps API. Finally, the extension uses an <code>&lt;iframe&gt;</code> to embed the maps from the external HTML webpages.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section">
+        <div class="title-category-container">
+          <span class="title-category"><b>PUBLICATION</b></span>
+          <div class="title">
+            <h2>Final Product</h2>
+          </div>
+        </div>
+        <p class="hide mb-16">Below are videos showing the full functionality of the Living Sustainability extension.</p>
+        <p class="hide lexend-reg">Highlight mode: </p>
+        <iframe src="https://www.youtube.com/embed/I1A1hQawbW0?si=EkIsfMhKEhYK2jAk?autoplay=1" allow="autoplay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="hide lexend-reg">Auto-detect mode: </p>
+        <iframe src="https://www.youtube.com/embed/OYngQEFzhJc?si=dMZTzmkcJSbhpO4D?autoplay=1" allow="autoplay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+    </section>
+
+
+    <footer>
+      <span>Designed and Coded by Pu Thavikulwat</span>
+    </footer>
+
+  </body>
+</html>

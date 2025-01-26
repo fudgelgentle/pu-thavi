@@ -33,6 +33,12 @@ h1, h2, h3, h4, h5, p, a {
   font-weight: 400;
 }
 
+footer h4 {
+  position: sticky;
+  text-align: center;
+  margin-top: 5%;
+}
+
 /* ? Breakpoint for large screen */
 @media screen and (min-width: 1920px) {
 
