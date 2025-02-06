@@ -383,9 +383,8 @@ p, .formative-study ul li, .iteration-container ul li, .showcase-li {
   margin-right: 24px;
 }
 
-.chrome-web {
+.publication-container .chrome-web {
   background-color: #F2F2F2;
-  justify-content: center;
   display: inline-block;
   padding: 4px 20px 4px 20px;
   text-decoration: none;

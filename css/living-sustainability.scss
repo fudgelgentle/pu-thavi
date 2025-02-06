@@ -376,13 +376,16 @@ p, .formative-study ul li, .iteration-container ul li, .showcase-li {
 
 }
 
-.chrome-web {
-  background-color: #F2F2F2;
-  display: inline-block;
-  // t, r, b, l
-  padding: 4px 20px 4px 20px;
-  text-decoration: none;
+.publication-container {
+  .chrome-web {
+    background-color: #F2F2F2;
+    display: inline-block;
+    // t, r, b, l
+    padding: 4px 20px 4px 20px;
+    text-decoration: none;
+  }
 }
+
 
 /* ? Breakpoint for large screen */
 @media screen and (min-width: 1920px) {
