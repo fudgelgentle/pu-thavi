@@ -103,6 +103,26 @@ footer span {
   margin-top: 64px;
 }
 
+.cg-4 {
+  column-gap: 4px;
+}
+
+.cg-8 {
+  column-gap: 8px;
+}
+
+.cg-12 {
+  column-gap: 12px;
+}
+
+.cg-16 {
+  column-gap: 16px;
+}
+
+.cg-20 {
+  column-gap: 20px;
+}
+
 .mt-d-64-m-32 {
   margin-top: 64px;
 }
@@ -361,6 +381,14 @@ p, .formative-study ul li, .iteration-container ul li, .showcase-li {
   border-left: 2px solid #333333;
   height: 90%;
   margin-right: 24px;
+}
+
+.chrome-web {
+  background-color: #F2F2F2;
+  justify-content: center;
+  display: inline-block;
+  padding: 4px 20px 4px 20px;
+  text-decoration: none;
 }
 
 /* ? Breakpoint for large screen */
